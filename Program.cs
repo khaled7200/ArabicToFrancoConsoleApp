@@ -4,12 +4,35 @@
     {
         static void Main(string[] args)
         {
+            try
+            {
+                File.Delete("output.txt");
+            }
+            catch (Exception)
+            {
 
-            var x = FrancoConverter.ConvertArabicToFranco("اهلا كيف حالك").ToUpper();
+            }
+        
 
-       ////     File.AppendAllText("addresses.txt",x+"\n \n");
+            var str = File.ReadAllText("addresses.txt");
 
-            Console.WriteLine("Hello, World!");
+            var lines=str.Split('\n');
+
+            lines = lines.Where(y =>!string.IsNullOrEmpty(y)).ToArray();
+            foreach (var line in lines) {
+            
+                var x = FrancoConverter.ConvertArabicToFranco(line.ToString()).ToUpper();
+
+           File.AppendAllText("output.txt",x+"\n \n");
+
+            Console.WriteLine(x);
+            }
+
+        
+
+
+            Console.WriteLine("----------DONE----------------");
+            Console.ReadLine();
         }
     }
 }

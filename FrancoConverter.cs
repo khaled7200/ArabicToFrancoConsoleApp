@@ -29,9 +29,135 @@ public static Dictionary<string, string> arabicSpecialWords = new Dictionary<str
     {"المجاوره", "Mg."},       // مع ال
   //  {"بجوار", "Next to"},
  //   {"وبجوار", "and Next to"},     // مع الواو
-    {"و", "and"},
-    { "فيلا","V."}
+    {"و ", "and"},
+    { "فيلا","Villa"},
+
+
+
+    { "عمارات","Blds."},
+    { "مدخل","Ent."},
+        { "المدخل","Ent."},
+  {"عمارة", "Bld."},
+{"عماره", "Bld."},
+{"العمارة", "Bld."},
+{"العماره", "Bld."},
+
+{"مبنى", "Bld."},
+{"المبنى", "Bld."},
+{"مبني", "Bld."},
+{"المبني", "Bld."},
+
+    {"امتداد","Ext." },
+    { "برج","Borg."},
+        { "البرج","Borg."},
+
+    {"عزبة", "Ezbt."},
+{"عزبه", "Ezbt."},
+{"العزبة", "Ezbt."},
+{"العزبه", "Ezbt."},
+
+{"رقم", "No."},
+{"الرقم", "No."},
+
+{"ط", "Road."},
+{"طريق", "Road."},
+{"الطريق", "Road."},
+
+{"حارة", "Haret."},
+{"الحارة", "Haret."},
+{"حاره", "Haret."},
+{"الحاره", "Haret."},
+
+
+
+
+   
 };
+
+
+        public static Dictionary<string,string> citiesNames = new Dictionary<string, string>() {
+        
+// 6 أكتوبر أول (all variants)
+{"6 أكتوبر أول", "6OCT AWL"},
+{"6 اكتوبر اول", "6OCT AWL"},
+{"٦ أكتوبر أول", "6OCT AWL"},
+{"٦ اكتوبر اول", "6OCT AWL"},
+{"اكتوبر اول", "6OCT AWL"},
+{"اكتوبر أول", "6OCT AWL"},
+{"٦اكتوبر اول", "6OCT AWL"},
+{"٦ اكتوبر أول", "6OCT AWL"},
+{"6اكتوبر اول", "6OCT AWL"},
+{"6 اكتوبر أول", "6OCT AWL"},
+{"السادس من اكتوبر اول", "6OCT AWL"},
+{"السادس من اكتوبر أول", "6OCT AWL"},
+{"سادس اكتوبر اول", "6OCT AWL"},
+{"سادس اكتوبر أول", "6OCT AWL"},
+{"مدينة 6 اكتوبر اول", "6OCT AWL"},
+{"مدينة ٦ اكتوبر اول", "6OCT AWL"},
+{"مدينه 6 اكتوبر اول", "6OCT AWL"},
+{"مدينه ٦ اكتوبر اول", "6OCT AWL"},
+
+
+// 6 أكتوبر ثاني (all variants)
+{"6 أكتوبر ثاني", "6OCT THAN"},
+{"6 اكتوبر ثاني", "6OCT THAN"},
+{"٦ أكتوبر ثاني", "6OCT THAN"},
+{"٦ اكتوبر ثاني", "6OCT THAN"},
+{"اكتوبر ثاني", "6OCT THAN"},
+{"اكتوبر ثانى", "6OCT THAN"},
+{"٦اكتوبر ثاني", "6OCT THAN"},
+{"٦ اكتوبر ثانى", "6OCT THAN"},
+{"6اكتوبر ثاني", "6OCT THAN"},
+{"6 اكتوبر ثانى", "6OCT THAN"},
+{"السادس من اكتوبر ثاني", "6OCT THAN"},
+{"السادس من اكتوبر ثانى", "6OCT THAN"},
+{"سادس اكتوبر ثاني", "6OCT THAN"},
+{"سادس اكتوبر ثانى", "6OCT THAN"},
+{"مدينة 6 اكتوبر ثاني", "6OCT THAN"},
+{"مدينة ٦ اكتوبر ثاني", "6OCT THAN"},
+{"مدينه 6 اكتوبر ثاني", "6OCT THAN"},
+{"مدينه ٦ اكتوبر ثاني", "6OCT THAN"},
+
+
+// بورسعيد
+{"بورسعيد", "PORTSAID"},
+{"بور سعيد", "PORTSAID"},
+
+// بورفؤاد
+{"بورفؤاد", "PORTFOUAD"},
+{"بور فؤاد", "PORTFOUAD"},
+
+// القطامية
+{"القطامية", "KATAMIA"},
+{"قطامية", "KATAMIA"},
+{"القطاميه", "KATAMIA"},
+{"قطاميه", "KATAMIA"},
+
+// مدينة نصر
+{"مدينة نصر", "NASR CITY"},
+{"مدينه نصر", "NASR CITY"},
+
+// مصر الجديدة
+{"مصر الجديدة", "MASR GEDEDA"},
+{"مصر الجديده", "MASR GEDEDA"},
+
+
+    // الشروق
+{"الشروق", "SHEROUK"},
+{"شروق", "SHEROUK"},
+
+// التجمع
+{"التجمع", "TAGAMOAA"},
+{"تجمع", "TAGAMOAA"},
+
+// السواح
+{"السواح", "SAWAH"},
+{"سواح", "SAWAH"},
+
+// أخميم
+{"أخميم", "AKHMIM"},
+{"اخميم", "AKHMIM"},
+        };
 
 
 
@@ -65,16 +191,16 @@ public static Dictionary<string, string> arabicSpecialWords = new Dictionary<str
         private static readonly Dictionary<string, string> FrancoMap = new Dictionary<string, string>
     {
         // High-Priority Numerals (Non-Latin sounds)
-        { "أ", "a" }, { "آ", "aa" }, { "إ", "e" }, { "ئ", "aa" }, { "ؤ", "oaa" }, { "ء", "aa" },
+        { "أ", "a" }, { "آ", "aa" }, { "إ", "e" }, { "ئ", "aa" }, { "ؤ", "oa" }, { "ء", "aa" },
         { "ع", "aa" },
         { "غ", "gh" }, // Can also be 3'
         { "ح", "h" },
         { "خ", "kh" }, // Can also be kh
         { "ق", "q" }, // Can also be q
         { "ص", "s" },
-        { "ض", "d'" },
+        { "ض", "d" },
         { "ط", "t" },
-        { "ظ", "z'" },
+        { "ظ", "z" },
         { "ك", "k" },
         
         // Basic Latin Approximations (Vowels and Consonants)
@@ -113,6 +239,14 @@ public static Dictionary<string, string> arabicSpecialWords = new Dictionary<str
         public static string ConvertSpecialWords(string arabicText)
         {
             string normalizedText = arabicText.ToLowerInvariant().Replace(" ", " ");
+
+
+            foreach (var city in citiesNames)
+            {
+                if (normalizedText.Contains(city.Key)) {normalizedText= normalizedText.Replace(city.Key, city.Value); }
+            }
+
+
 
             // 2. Transliteration using the map
             var result = new StringBuilder();
